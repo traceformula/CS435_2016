@@ -1,0 +1,22 @@
+//By Mirodil
+
+public static int gcd(int m, int n) {
+        int max = 0, min = 0;
+        if (m > n) {
+            max = m;
+            min = n;
+        } else {
+            max = n;
+            min = m;
+        }
+
+        int q = max % min;
+
+        while (q > 0) {
+            max = q;
+            q = min % q;
+            min = max;
+        }
+
+        return min;
+    }
