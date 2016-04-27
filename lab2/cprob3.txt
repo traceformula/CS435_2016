@@ -1,0 +1,8 @@
+Generaly, factorial alogrithm need n step to multiply each number between 1 to n, so, we can guess the running time complexity forumula is T(n) = n, so it is O(n)
+
+Prove:
+T(1) = 1
+T(2) = T(1) + 1
+T(3) = T(2) + 1
+T(k) = T(k-1) + 1
+T(n) = T(n-1) + 1 = n
